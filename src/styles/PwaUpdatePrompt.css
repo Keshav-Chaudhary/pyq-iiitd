@@ -1,0 +1,103 @@
+.pwa-prompt-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--card);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 10000;
+  max-width: 320px;
+}
+
+.pwa-prompt-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pwa-prompt-icon {
+  color: var(--primary-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.spin-anim {
+  animation: spin 2s linear infinite;
+}
+
+.pwa-prompt-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-2);
+}
+
+.pwa-prompt-text strong {
+  color: var(--text);
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.pwa-prompt-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.pwa-btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: var(--r);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--t);
+}
+
+.pwa-btn-primary:hover {
+  background: var(--primary-light);
+}
+
+.pwa-btn-close {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  padding: 6px;
+  border-radius: var(--r);
+  cursor: pointer;
+  transition: all var(--t);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pwa-btn-close:hover {
+  background: var(--card-hover);
+  color: var(--text);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .pwa-prompt-container {
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    max-width: none;
+  }
+}

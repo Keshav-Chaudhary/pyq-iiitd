@@ -1,0 +1,367 @@
+.floating-cta-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 11px;
+  z-index: 999;
+  transition: opacity 0.5s ease, margin-bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* Dark mode defaults */
+  --cta-bg: linear-gradient(90deg, rgba(2, 23, 41, 0.95), rgba(4, 36, 63, 0.95));
+  --cta-border: rgba(63, 173, 168, 0.3);
+  --cta-shadow: 0 10px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(63, 173, 168, 0.1);
+  --cta-text: #e2e8f0;
+  --cta-gold: #fbbf24;
+  --cta-gold-hover: #ffffff;
+  --cta-gold-shadow: 0 0 10px rgba(251, 191, 36, 0.7);
+  --cta-icon-shadow: drop-shadow(0 0 4px rgba(251, 191, 36, 0.8));
+}
+
+.floating-cta-wrapper.hidden {
+  opacity: 0;
+  pointer-events: none;
+  margin-bottom: -20px;
+}
+
+.floating-cta-wrapper.visible {
+  opacity: 1;
+  pointer-events: auto;
+  margin-bottom: 0;
+}
+
+[data-theme="light"] .floating-cta-wrapper {
+  --cta-bg: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(240, 244, 248, 0.95));
+  --cta-border: rgba(2, 39, 66, 0.15);
+  --cta-shadow: 0 10px 30px rgba(0,0,0,0.1), inset 0 0 20px rgba(0,0,0,0.02);
+  --cta-text: #1d3557;
+  --cta-gold: #d97706; /* Dark amber for high contrast on white */
+  --cta-gold-hover: #022742; /* Dark navy */
+  --cta-gold-shadow: none;
+  --cta-icon-shadow: drop-shadow(0 2px 4px rgba(2, 39, 66, 0.3));
+}
+
+.floating-star-cta {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 4px;
+  color: var(--text);
+  text-decoration: none !important;
+  box-shadow: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  max-width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.floating-star-cta:hover {
+  max-width: 320px;
+  background: var(--cta-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--cta-border);
+  box-shadow: var(--cta-shadow);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.star-icon-wrap {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.star-icon-wrap.rest {
+  animation: float-sad 2s infinite ease-in-out;
+  filter: grayscale(40%);
+}
+
+.star-icon-wrap.button {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.star-icon-wrap.text {
+  transform: scale(1.25) rotate(10deg);
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+}
+
+.star-text {
+  white-space: nowrap;
+  font-size: 0.92rem;
+  font-weight: 550;
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(12px);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  color: var(--cta-text);
+  display: flex;
+  align-items: center;
+}
+
+.floating-star-cta:hover .star-text {
+  max-width: 300px;
+  margin-right: 8px;
+  margin-left: 16px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.star-highlight {
+  font-weight: 700;
+  color: var(--cta-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0;
+  margin-left: 8px;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.star-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--cta-gold);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: var(--cta-gold-shadow);
+}
+
+.star-highlight:hover {
+  color: var(--cta-gold-hover);
+  text-shadow: var(--cta-gold-shadow);
+}
+
+.star-highlight:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: var(--cta-gold-hover);
+}
+
+.star-highlight svg {
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), color 0.25s ease;
+  color: var(--cta-gold);
+}
+
+.star-highlight:hover svg {
+  transform: scale(1.25) rotate(15deg);
+  color: var(--cta-gold-hover);
+  filter: var(--cta-icon-shadow);
+}
+
+@keyframes float-sad {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+@media (max-width: 768px) {
+  .floating-cta-wrapper {
+    bottom: 24px;
+    right: 22px;
+    transform: scale(0.55);
+    transform-origin: bottom right;
+  }
+}
+
+/* Emoji Blinking Illusion */
+.emoji-blinker {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-open,
+.emoji-closed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+}
+
+.emoji-open {
+  animation: blink-open 4s ease-in-out infinite;
+}
+
+.emoji-closed {
+  animation: blink-closed 4s ease-in-out infinite;
+}
+
+@keyframes blink-open {
+  0%, 91% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  94% { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  96% { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  99%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes blink-closed {
+  0%, 91% { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  94% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  96% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  99%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+}
+
+/* Floating Particles (Niagara Particle System - Toned Down, Faint & Elegant) */
+.floating-particles.outside {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  opacity: 0;
+  filter: grayscale(0%);
+  will-change: transform, opacity;
+}
+
+/* Toned down, tiny particle sizes and slow speeds to prevent distraction */
+.particle.p1 {
+  top: 10px;
+  left: -8px;
+  font-size: 0.85rem;
+  animation: niagara-up-left 5.0s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.particle.p2 {
+  top: 18px;
+  right: -8px;
+  font-size: 0.7rem;
+  animation: niagara-gravity-right 5.5s ease-out infinite;
+  animation-delay: 0.8s;
+}
+
+.particle.p3 {
+  top: -8px;
+  left: 10px;
+  font-size: 0.75rem;
+  animation: niagara-orbit-cw 7.0s linear infinite;
+  animation-delay: 1.4s;
+}
+
+.particle.p4 {
+  top: -10px;
+  left: -4px;
+  font-size: 0.85rem;
+  animation: niagara-velocity-up 4.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  animation-delay: 2.0s;
+}
+
+.particle.p5 {
+  bottom: -6px;
+  left: 14px;
+  font-size: 0.65rem;
+  animation: niagara-gravity-down 5.2s ease-in infinite;
+  animation-delay: 2.6s;
+}
+
+.particle.p6 {
+  bottom: 6px;
+  left: -10px;
+  font-size: 0.8rem;
+  animation: niagara-drift-down-left 6.0s ease-out infinite;
+  animation-delay: 3.2s;
+}
+
+.particle.p7 {
+  top: -6px;
+  right: -6px;
+  font-size: 0.75rem;
+  animation: niagara-zigzag-right 6.2s ease-in-out infinite;
+  animation-delay: 3.8s;
+}
+
+.particle.p8 {
+  top: 10px;
+  left: 4px;
+  font-size: 0.75rem;
+  animation: niagara-orbit-ccw 7.2s linear infinite;
+  animation-delay: 4.4s;
+}
+
+/* Faint opacities (max 0.25) and shorter drift distances to prevent distraction */
+@keyframes niagara-up-left {
+  0% { transform: translate(0, 0) scale(0.3) rotate(0deg); opacity: 0; }
+  25% { opacity: 0.25; }
+  75% { opacity: 0.20; }
+  100% { transform: translate(-12px, -18px) scale(0.8) rotate(-90deg); opacity: 0; }
+}
+
+@keyframes niagara-gravity-right {
+  0% { transform: translate(0, 0) scale(0.3) rotate(0deg); opacity: 0; }
+  15% { opacity: 0.25; }
+  50% { transform: translate(12px, -5px) scale(0.7) rotate(45deg); }
+  100% { transform: translate(16px, 8px) scale(0.3) rotate(180deg); opacity: 0; }
+}
+
+@keyframes niagara-orbit-cw {
+  0% { transform: rotate(0deg) translateX(12px) rotate(0deg) scale(0.3); opacity: 0; }
+  20% { opacity: 0.25; }
+  80% { opacity: 0.25; }
+  100% { transform: rotate(360deg) translateX(12px) rotate(-360deg) scale(0.7); opacity: 0; }
+}
+
+@keyframes niagara-velocity-up {
+  0% { transform: translate(0, 0) scale(0.3) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.3; transform: translate(1px, -8px) scale(0.8); }
+  100% { transform: translate(2px, -24px) scale(0.2) rotate(60deg); opacity: 0; }
+}
+
+@keyframes niagara-gravity-down {
+  0% { transform: translate(0, 0) scale(0.3); opacity: 0; }
+  25% { opacity: 0.25; }
+  100% { transform: translate(-5px, 18px) scale(0.6); opacity: 0; }
+}
+
+@keyframes niagara-drift-down-left {
+  0% { transform: translate(0, 0) scale(0.3) rotate(0deg); opacity: 0; }
+  30% { opacity: 0.25; }
+  100% { transform: translate(-16px, 10px) scale(0.7) rotate(60deg); opacity: 0; }
+}
+
+@keyframes niagara-zigzag-right {
+  0% { transform: translate(0, 0) scale(0.3) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.25; }
+  45% { transform: translate(8px, -8px) scale(0.6) rotate(-20deg); }
+  75% { transform: translate(5px, -15px) scale(0.7) rotate(20deg); }
+  100% { transform: translate(12px, -22px) scale(0.3) rotate(90deg); opacity: 0; }
+}
+
+@keyframes niagara-orbit-ccw {
+  0% { transform: rotate(360deg) translateY(12px) rotate(-360deg) scale(0.3); opacity: 0; }
+  20% { opacity: 0.25; }
+  80% { opacity: 0.25; }
+  100% { transform: rotate(0deg) translateY(12px) rotate(0deg) scale(0.7); opacity: 0; }
+}

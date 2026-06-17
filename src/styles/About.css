@@ -1,0 +1,269 @@
+.about-page {
+  padding-bottom: 60px;
+  background: var(--bg);
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+}
+
+.about-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, var(--border) 1.5px, transparent 1.5px);
+  background-size: 50px 50px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, #000 80%, rgba(0, 0, 0, 0.1) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 80%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.about-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  padding: 52px 0 40px;
+  margin-bottom: 32px;
+}
+
+.about-header-glow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(63, 173, 168, 0.12) 0%, transparent 55%),
+    radial-gradient(circle at 70% 30%, rgba(215, 214, 157, 0.08) 0%, transparent 50%);
+  filter: blur(70px);
+  pointer-events: none;
+}
+
+.about-header h1 { 
+  font-size: clamp(1.8rem, 4vw, 2.4rem); 
+  font-weight: 900; 
+  color: var(--text); 
+  margin-bottom: 10px; 
+  letter-spacing: -0.03em;
+}
+
+.about-title-gradient {
+  background: linear-gradient(135deg, #3FADA8, #D7D69D, #6FC2BE);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: aboutGradientShift 6s ease infinite;
+}
+
+@keyframes aboutGradientShift {
+  0% { filter: hue-rotate(0deg); }
+  
+  100% { filter: hue-rotate(0deg); }
+}
+
+.about-header p  { 
+  font-size: 0.95rem; 
+  color: var(--text-muted); 
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 820px;
+}
+
+/* ── Credits ─────────────────────────────────────── */
+.credits-section { margin-bottom: 8px; }
+
+.credits-heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.credit-card {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--r-lg);
+  border: 1.5px solid var(--border-2);
+  background: var(--card);
+}
+
+.credit-card-dev {
+  border-color: rgba(99,102,241,0.4);
+  background: linear-gradient(135deg, var(--card), rgba(99,102,241,0.05));
+}
+
+.credit-card-src {
+  border-color: rgba(16,185,129,0.4);
+  background: linear-gradient(135deg, var(--card), rgba(16,185,129,0.05));
+}
+
+.credit-avatar {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-3);
+  border-radius: var(--r);
+}
+
+.credit-role {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 3px;
+}
+
+.credit-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.credit-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.gh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: color var(--t);
+}
+.gh-link:hover { color: var(--text); text-decoration: underline; }
+
+/* ── About cards ─────────────────────────────────── */
+.about-card {
+  display: flex;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 16px;
+}
+
+.about-card-green { border-color: rgba(16,185,129,0.3); }
+.about-card-warn  { border-color: rgba(245,158,11,0.3); }
+
+.about-card-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-3);
+  border-radius: var(--r);
+}
+
+.about-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.about-card p:last-child { margin-bottom: 0; }
+
+.about-steps {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+code {
+  background: var(--bg-3);
+  padding: 2px 6px;
+  border-radius: var(--r-sm);
+  font-size: 0.82em;
+  color: var(--primary-light);
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+/* ── Links grid ──────────────────────────────────── */
+.about-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.about-link-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--primary);
+  border: none;
+  border-radius: var(--r-sm);
+  text-decoration: none;
+  color: white !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all var(--t);
+  justify-content: center;
+}
+
+.about-link-card:hover {
+  background: var(--primary-dark);
+  color: white !important;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.about-link-icon { font-size: 1.1rem; }
+.about-link-label { flex: 1; text-align: left; }
+.about-link-arrow { color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; }
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .credits-grid { grid-template-columns: 1fr; }
+  .about-links-grid { grid-template-columns: 1fr; }
+  .credit-card { flex-direction: column; }
+  .about-card { flex-direction: column; }
+}

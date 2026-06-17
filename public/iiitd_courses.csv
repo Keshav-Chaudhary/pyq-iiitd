@@ -1,0 +1,212 @@
+program,branch_code,semester,course_name,course_type,course_code_hint
+CSE,CSE,1,Introduction to Programming,Core,IP
+CSE,CSE,1,Digital Circuits,Core,DC
+CSE,CSE,1,Maths I (Linear Algebra),Core,LA
+CSE,CSE,1,Introduction to HCI,Core,HCI
+CSE,CSE,1,Communication Skills,Core,Communication Skills
+CSE,CSE,2,Data Structures and Algorithms,Core,DSA
+CSE,CSE,2,Basic Electronics,Core,BE
+CSE,CSE,2,Maths II (Probability & Statistics),Core,
+CSE,CSE,2,Computer Organization,Core,CO
+CSE,CSE,2,SSH,Elective,
+CSE,CSE,3,Advanced Programming,Core,AP
+CSE,CSE,3,Operating Systems,Core,OS
+CSE,CSE,3,Discrete Structures / Discrete Mathematics,Core,DM
+CSE,CSE,3,Maths III / Signals & Systems / Embedded Logic Design,Elective,M3
+CSE,CSE,3,SSH,Elective,
+CSE,CSE,4,Fundamentals of Database Management Systems,Core,DBMS
+CSE,CSE,4,Algorithm Design and Analysis,Core,ADA
+CSE,CSE,4,Practical Bioinformatics / Prototyping Interactive Systems / Theory of Computation,Elective,
+CSE,CSE,4,Maths IV / Graph Theory,Elective,M4
+CSE,CSE,5,Computer Networks,Core,CN
+CSE,CSE,5,Technical Communication + Environmental Sciences,Core,EVS
+ECE,ECE,1,Introduction to Programming,Core,IP
+ECE,ECE,1,Digital Circuits,Core,DC
+ECE,ECE,1,Introduction to HCI,Core,HCI
+ECE,ECE,1,Maths I (Linear Algebra),Core,LA
+ECE,ECE,1,Communication Skills,Core,Communication Skills
+ECE,ECE,2,Data Structures and Algorithms,Core,DSA
+ECE,ECE,2,Basic Electronics,Core,BE
+ECE,ECE,2,Computer Organization,Core,CO
+ECE,ECE,2,Maths II (Probability & Statistics),Core,
+ECE,ECE,2,SSH,Elective,
+ECE,ECE,3,Circuit Theory and Devices,Core,
+ECE,ECE,3,Embedded Logic Design,Core,
+ECE,ECE,3,Signals and Systems,Core,S&S
+ECE,ECE,3,Maths III (Multivariate Calculus),Core,M3
+ECE,ECE,3,SSH / Advanced Programming,Elective,
+ECE,ECE,4,Fields & Waves,Core,
+ECE,ECE,4,Integrated Electronics,Core,
+ECE,ECE,4,Principles of Communication Systems,Core,
+ECE,ECE,4,Maths IV (ODE/PDE),Core,M4
+ECE,ECE,5,Digital Communication Systems,Core Elective,
+ECE,ECE,5,Digital Signal Processing,Core Elective,DSP
+ECE,ECE,5,Technical Communication + Environmental Sciences,Core,EVS
+CSAM,CSAM,1,Introduction to Programming,Core,IP
+CSAM,CSAM,1,Digital Circuits,Core,DC
+CSAM,CSAM,1,Maths I (Linear Algebra),Core,LA
+CSAM,CSAM,1,Introduction to HCI,Core,HCI
+CSAM,CSAM,1,Communication Skills,Core,Communication Skills
+CSAM,CSAM,2,Data Structures and Algorithms,Core,DSA
+CSAM,CSAM,2,Basic Electronics,Core,BE
+CSAM,CSAM,2,Maths II (Probability & Statistics),Core,
+CSAM,CSAM,2,Computer Organization,Core,CO
+CSAM,CSAM,2,SSH,Elective,
+CSAM,CSAM,3,Real Analysis I,Core,
+CSAM,CSAM,3,Operating Systems,Core,OS
+CSAM,CSAM,3,Discrete Structures,Core,DM
+CSAM,CSAM,3,Number Theory / Advanced Programming / Physics / Signals and Systems,Elective,
+CSAM,CSAM,3,SSH,Elective,
+CSAM,CSAM,4,Maths IV (ODE/PDE),Core,M4
+CSAM,CSAM,4,Abstract Algebra I,Core,
+CSAM,CSAM,4,Algorithm Design and Analysis,Core,ADA
+CSAM,CSAM,4,Theory of Computation,Core,TOC
+CSAM,CSAM,5,Real Analysis II / Scientific Computing,Elective,
+CSAM,CSAM,5,Stochastic Processes and Applications,Core,
+CSAM,CSAM,5,Technical Communication + Environmental Sciences,Core,EVS
+CSAM,CSAM,6,Linear Optimization / Convex Optimization,Elective,COO
+CSAM,CSAM,6,Statistical Inference,Core,SI
+CSD,CSD,1,Introduction to Programming,Core,IP
+CSD,CSD,1,Digital Circuits,Core,DC
+CSD,CSD,1,Maths I (Linear Algebra),Core,LA
+CSD,CSD,1,Introduction to HCI,Core,HCI
+CSD,CSD,1,Communication Skills,Core,Communication Skills
+CSD,CSD,2,Data Structures and Algorithms,Core,DSA
+CSD,CSD,2,Design Drawing & Visualization,Core,
+CSD,CSD,2,Maths II (Probability & Statistics),Core,
+CSD,CSD,2,Computer Organization,Core,CO
+CSD,CSD,2,Visual Design & Communication,Core,VDF
+CSD,CSD,3,Operating Systems,Core,OS
+CSD,CSD,3,Research Methods in Social Science and Design,Core,
+CSD,CSD,3,Advanced Programming,Core,AP
+CSD,CSD,3,Design Processes & Perspectives,Core,
+CSD,CSD,3,Maths III / Discrete Mathematics,Elective,DM
+CSD,CSD,4,Algorithm Design and Analysis,Core,ADA
+CSD,CSD,4,Prototyping Interactive Systems,Core,
+CSD,CSD,4,Design of Interactive Systems,Core,
+CSD,CSD,4,Fundamentals of Database Management Systems,Core,DBMS
+CSD,CSD,4,SSH / Maths IV / Theory of Computation,Elective,
+CSD,CSD,5,Computer Networks,Core,CN
+CSD,CSD,5,Technical Communication + Environmental Sciences,Core,EVS
+CSD,CSD,5,Elective,Elective,
+CSSS,CSSS,1,Introduction to Programming,Core,IP
+CSSS,CSSS,1,Digital Circuits,Core,DC
+CSSS,CSSS,1,Maths I (Linear Algebra),Core,LA
+CSSS,CSSS,1,Introduction to HCI,Core,HCI
+CSSS,CSSS,1,Communication Skills,Core,Communication Skills
+CSSS,CSSS,2,Data Structures and Algorithms,Core,DSA
+CSSS,CSSS,2,Introduction to Sociology / Anthropology,Core,
+CSSS,CSSS,2,Maths II (Probability & Statistics),Core,
+CSSS,CSSS,2,Computer Organization,Core,CO
+CSSS,CSSS,2,Critical Thinking and Readings in Social Sciences,Core,
+CSSS,CSSS,3,Operating Systems,Core,OS
+CSSS,CSSS,3,Research Methods in Social Science and Design,Core,
+CSSS,CSSS,3,Discrete Structures / Discrete Mathematics,Core,DM
+CSSS,CSSS,3,Advanced Programming,Core,AP
+CSSS,CSSS,3,Maths III (Advanced Calculus),Core,M3
+CSSS,CSSS,4,Algorithm Design and Analysis,Core,ADA
+CSSS,CSSS,4,Convex Optimization,Core,COO
+CSSS,CSSS,4,Fundamentals of Database Management Systems,Core,DBMS
+CSSS,CSSS,4,Econometrics I,Core,
+CSSS,CSSS,4,Technical Communication + Environmental Sciences,Core,EVS
+CSB,CSB,1,Introduction to Programming,Core,IP
+CSB,CSB,1,Introduction to HCI,Core,HCI
+CSB,CSB,1,Maths I (Linear Algebra),Core,LA
+CSB,CSB,1,Digital Circuits,Core,DC
+CSB,CSB,1,Communication Skills,Core,Communication Skills
+CSB,CSB,2,Data Structures and Algorithms,Core,DSA
+CSB,CSB,2,Computer Organization,Core,CO
+CSB,CSB,2,Maths II (Probability & Statistics),Core,
+CSB,CSB,2,Foundations of Biology I,Core,FOB
+CSB,CSB,2,SSH,Elective,
+CSB,CSB,3,Operating Systems,Core,OS
+CSB,CSB,3,Advanced Programming,Core,AP
+CSB,CSB,3,Discrete Mathematics / Discrete Structures,Core,DM
+CSB,CSB,3,Introduction to Quantitative Biology,Core,IQB
+CSB,CSB,3,Foundations of Biology II,Core,
+CSB,CSB,4,Algorithm Design and Analysis,Core,ADA
+CSB,CSB,4,Fundamentals of Database Management Systems,Core,DBMS
+CSB,CSB,4,Graph Theory / Introduction to Mathematical Logic,Elective,GMT
+CSB,CSB,4,Biophysics,Core,BioP
+CSB,CSB,5,Foundations of Biomedical Informatics,Core,
+CSB,CSB,5,Technical Communication + Environmental Studies,Core,EVS
+CSAI,CSAI,1,Introduction to Programming,Core,IP
+CSAI,CSAI,1,Digital Circuits,Core,DC
+CSAI,CSAI,1,Maths I (Linear Algebra),Core,LA
+CSAI,CSAI,1,Introduction to HCI,Core,HCI
+CSAI,CSAI,1,Communication Skills,Core,Communication Skills
+CSAI,CSAI,2,Data Structures and Algorithms,Core,DSA
+CSAI,CSAI,2,Introduction to Intelligent Systems,Core,IIS
+CSAI,CSAI,2,Maths II (Probability & Statistics),Core,
+CSAI,CSAI,2,Computer Organization / Fundamentals of Database Management Systems,Elective,CO
+CSAI,CSAI,2,SSH,Elective,
+CSAI,CSAI,3,Advanced Programming,Core,AP
+CSAI,CSAI,3,Operating Systems,Core,OS
+CSAI,CSAI,3,Discrete Mathematics / Discrete Structures,Core,DM
+CSAI,CSAI,3,Maths III,Core,M3
+CSAI,CSAI,3,Signals & Systems,Core,S&S
+CSAI,CSAI,4,Fundamentals of Database Management Systems / Computer Organization / Ethics in AI,Elective,DBMS
+CSAI,CSAI,4,Maths IV / Graph Theory / Statistical Inference / Introduction to Mathematical Logic / Theory of Computation,Elective,M4
+CSAI,CSAI,4,Algorithm Design and Analysis,Core,ADA
+CSAI,CSAI,4,Statistical Machine Learning,Core,SML
+CSAI,CSAI,4,Optimization,Core,COO
+CSAI,CSAI,5,Machine Learning,Core,ML
+CSAI,CSAI,5,Computer Architecture / Computer Networks / Compilers,Core Elective,CA
+CSAI,CSAI,5,Artificial Intelligence,Core,AI
+CSAI,CSAI,5,Technical Communication + Environmental Sciences,Core,EVS
+CSAI,CSAI,6,Ethics in Artificial Intelligence,Core,EAI
+CSAI,CSAI,6,AI Core Course 1,Core Elective,
+CSAI,CSAI,6,AI Core Course 2,Core Elective,
+CSAI,CSAI,6,AI Application Elective 1,Elective,
+CSAI,CSAI,6,AI Application Elective 2,Elective,
+CSAI,CSAI,6,AI Application Elective 3,Elective,
+CSAI,CSAI,6,AI Application Elective 4,Elective,
+EVE,EVE,1,Introduction to Programming,Core,IP
+EVE,EVE,1,Digital Circuits,Core,DC
+EVE,EVE,1,Introduction to HCI,Core,HCI
+EVE,EVE,1,Maths I (Linear Algebra),Core,LA
+EVE,EVE,1,Communication Skills,Core,Communication Skills
+EVE,EVE,2,Data Structures and Algorithms,Core,DSA
+EVE,EVE,2,Basic Electronics,Core,BE
+EVE,EVE,2,Computer Organization,Core,CO
+EVE,EVE,2,Maths II (Probability & Statistics),Core,
+EVE,EVE,2,SSH,Elective,
+EVE,EVE,3,Circuit Theory and Devices,Core,
+EVE,EVE,3,Embedded Logic Design,Core,
+EVE,EVE,3,Signals and Systems,Core,S&S
+EVE,EVE,3,Maths III,Core,M3
+EVE,EVE,3,SSH / Advanced Programming,Elective,
+EVE,EVE,4,Fields & Waves,Core,
+EVE,EVE,4,Integrated Electronics,Core,
+EVE,EVE,4,Physics of Semiconductor Devices,Core,
+EVE,EVE,4,Electronic System Design,Core,
+EVE,EVE,4,Open Elective,Elective,
+EVE,EVE,5,Digital VLSI Design,Core,DVD
+EVE,EVE,5,Analog CMOS Design,Core,
+EVE,EVE,5,VLSI Design Flow,Core,
+EVE,EVE,5,Technical Communication + Environmental Sciences,Core,EVS
+CSEC,CSEC,1,Introduction to Programming,Core,IP
+CSEC,CSEC,1,Digital Circuits,Core,DC
+CSEC,CSEC,1,Maths I (Linear Algebra),Core,LA
+CSEC,CSEC,1,Introduction to HCI,Core,HCI
+CSEC,CSEC,1,Communication Skills,Core,Communication Skills
+CSEC,CSEC,2,Data Structures and Algorithms,Core,DSA
+CSEC,CSEC,2,Principles of Economics,Core,
+CSEC,CSEC,2,Maths II (Probability & Statistics),Core,
+CSEC,CSEC,2,Computer Organization,Core,CO
+CSEC,CSEC,2,SSH,Elective,
+CSEC,CSEC,3,Operating Systems,Core,OS
+CSEC,CSEC,3,Macroeconomics,Core,
+CSEC,CSEC,3,Discrete Mathematics,Core,DM
+CSEC,CSEC,3,Advanced Programming,Core,AP
+CSEC,CSEC,3,Maths III (Multivariate Calculus),Core,M3
+CSEC,CSEC,4,Algorithm Design and Analysis,Core,ADA
+CSEC,CSEC,4,Convex Optimization,Core,COO
+CSEC,CSEC,4,Database Management Systems,Core,DBMS
+CSEC,CSEC,4,Econometrics I,Core,
+CSEC,CSEC,4,Microeconomics,Core,
+CSEC,CSEC,5,Game Theory,Core,GT
+CSEC,CSEC,5,Econometrics II,Core,
+CSEC,CSEC,5,Technical Communication + Environmental Sciences,Core,EVS
+CSEC,CSEC,6,Industrial Organization / Contract Theory / Mechanism Design / Behavioral Economics / Causal Inference,Elective,
+CSEC,CSEC,6,Econometrics with Machine Learning / Economics and Social Networks / Spatial Statistics / Markov Decision Processes / Mathematical Finance,Elective,

@@ -1,0 +1,42 @@
+.skeleton-loader {
+  display: block;
+  background: var(--card-2);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skeleton-loader::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 100%
+  );
+  animation: shimmer 1.5s infinite;
+  z-index: 2;
+}
+
+[data-theme="light"] .skeleton-loader {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .skeleton-loader::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%
+  );
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200%); }
+}
