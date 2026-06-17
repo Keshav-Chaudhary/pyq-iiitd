@@ -77,7 +77,7 @@ export default function FloatingStarCTA() {
         </div>
       )}
       <a 
-        href="https://github.com/NalishJain/IIITD-PYQs" 
+        href="https://github.com/Keshav-Chaudhary/pyq-iiitd" 
         target="_blank" 
         rel="noreferrer"
         className="floating-star-cta"

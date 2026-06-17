@@ -120,9 +120,25 @@ To run the platform locally:
 Contributions to both the PYQ archive and the website source code are always welcome.
 
 - **Source File Contributions**: Head over to the [NalishJain/IIITD-PYQs](https://github.com/NalishJain/IIITD-PYQs) repository to upload past year papers, assignments, or notes.
-- **Website Contributions**: If you want to build features or squash bugs, check out the website repository.
+- **Website Contributions**: If you want to build features or squash bugs, check out the [Keshav-Chaudhary/pyq-iiitd](https://github.com/Keshav-Chaudhary/pyq-iiitd) website repository.
 
 All contributors will be automatically featured on the `/contributors` page!
+
+---
+
+## 🚀 Deployment
+
+The site is configured for zero-configuration deployment to **Firebase Hosting**.
+
+To deploy updates to production (`https://pyq-iiitd.web.app`):
+1. Make sure you are logged into Firebase CLI:
+   ```bash
+   firebase login
+   ```
+2. Build and deploy using the automated script:
+   ```bash
+   npm run deploy
+   ```
 
 ---
 

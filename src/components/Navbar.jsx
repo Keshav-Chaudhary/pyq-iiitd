@@ -138,7 +138,7 @@ export default function Navbar() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/NalishJain/IIITD-PYQs"
+            href="https://github.com/Keshav-Chaudhary/pyq-iiitd"
             target="_blank"
             rel="noreferrer"
             className="nav-github-btn"
@@ -179,7 +179,7 @@ export default function Navbar() {
               <Link to="/resources" className={`mobile-link ${isActive('/resources') ? 'active' : ''}`} onClick={close}><BookOpen size={18} strokeWidth={2.5} /> Resources & Journey</Link>
               <Link to="/about"     className={`mobile-link ${isActive('/about')     ? 'active' : ''}`} onClick={close}><Info size={18} strokeWidth={2.5} /> About</Link>
               <Link to="/contributors" className={`mobile-link ${isActive('/contributors') ? 'active' : ''}`} onClick={close}><Users size={18} strokeWidth={2.5} /> Contributors</Link>
-              <a href="https://github.com/NalishJain/IIITD-PYQs" target="_blank" rel="noreferrer" className="mobile-link" onClick={close}>
+              <a href="https://github.com/Keshav-Chaudhary/pyq-iiitd" target="_blank" rel="noreferrer" className="mobile-link" onClick={close}>
                 <GithubIcon /> Source Code
               </a>
               <div className="mobile-divider" />
