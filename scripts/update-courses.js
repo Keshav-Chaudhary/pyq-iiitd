@@ -383,7 +383,12 @@ async function syncCourses() {
   const newlyAddedSubjects = sortedSubjects.filter((s) => !prevSubjectMap.has(s))
   const removedSubjects = Array.from(prevSubjectMap.keys()).filter((s) => !subjectMap.has(s))
 
-  // IDEMPOTENCY GUARD: If no changes whatsoever, do not touch ANY files on disk!
+  // Handle CLI automation flags (--push, --deploy, --all)
+  const args = process.argv.slice(2)
+  const shouldPush = args.includes('--push') || args.includes('--all')
+  const shouldDeploy = args.includes('--deploy') || args.includes('--all')
+
+  // IDEMPOTENCY GUARD: If no data changes, do not touch data files on disk!
   if (!hasChanges) {
     console.log('\n' + '='.repeat(70))
     console.log('✨ EVERYTHING IS ALREADY UP-TO-DATE!')
@@ -393,6 +398,17 @@ async function syncCourses() {
     console.log(`🔒 Added: 0, Removed: 0`)
     console.log(`⚡ Datasets left untouched on disk to prevent redundant Git commits.`)
     console.log('='.repeat(70) + '\n')
+
+    if (shouldDeploy) {
+      console.log('🏗️ Building and deploying to Firebase Hosting as requested (--deploy)...')
+      try {
+        execSync('npm run deploy', { stdio: 'inherit', cwd: rootDir })
+        console.log('✅ Firebase deployment successful!')
+      } catch (err) {
+        console.error('❌ Firebase deployment failed:', err.message)
+        process.exit(1)
+      }
+    }
     return
   }
 
@@ -473,9 +489,6 @@ async function syncCourses() {
   console.log('='.repeat(70) + '\n')
 
   // Handle CLI automation flags (--push, --deploy, --all)
-  const args = process.argv.slice(2)
-  const shouldPush = args.includes('--push') || args.includes('--all')
-  const shouldDeploy = args.includes('--deploy') || args.includes('--all')
 
   if (shouldPush) {
     console.log('🚀 Auto-committing and pushing course data to Git...')
