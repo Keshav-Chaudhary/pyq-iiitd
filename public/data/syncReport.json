@@ -1,420 +1,17 @@
 {
-  "timestamp": "2026-09-24T21:35:22.261Z",
+  "timestamp": "2026-09-24T21:48:21.838Z",
   "sourceRepo": "NalishJain/IIITD-PYQs",
   "branch": "main",
   "stats": {
     "totalSubjects": 98,
-    "totalFiles": 1731,
-    "previousTotalFiles": 1664,
-    "newFilesCount": 67,
-    "removedFilesCount": 0
+    "totalFiles": 1708,
+    "previousTotalFiles": 1731,
+    "newFilesCount": 0,
+    "removedFilesCount": 1
   },
   "newlyAddedSubjects": [],
   "removedSubjects": [],
-  "recentAddedFiles": [
-    {
-      "subject": "ADA",
-      "year": "2024",
-      "name": "ADA Quiz-3 Solutions.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "ADA",
-      "year": "2024",
-      "name": "ADA Quiz-4 solution.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "ADA",
-      "year": "2024",
-      "name": "ADA-24 Sec-A End-sem Solution-rubric.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "ADA",
-      "year": "2024",
-      "name": "Quiz-1 Solutions.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "ADA",
-      "year": "2024",
-      "name": "Quiz-2 Solution.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "1. Intro to C.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "10. Linked List.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "11. linked list, Stacks and Queues.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "12. Trees, BST.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "13. BST, AVL.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "14. AVL Trees.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "15. Heap, Heapsort.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "16. Intro to Priority Queue and Tries, Graphs.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "17. Graphs.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "18. BFS.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "19. DFS and Topological Sort.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "2. Basic Recursion.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "20. Topological Sort, Bipartite Graph, Strongly Connected Components.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "21. SCC, Single Source-Shortest Path.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "22. Dijkstra's Algorithm, Minimum Spanning Tree.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "23. Kruskal's Algorithm and Disjoint Sets.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "24. Prim's Algorithm, Hash tables.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "25. Hash Tables.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "26. Huffman Coding and Decision Trees.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "3. Fibonacci, Binary search.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "3. Tower of Hanoi.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "5. Asymptotic Analysis (Time complexity).pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "6. Asymptotic Notation and Time Complexity.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "7. Merge Sort, Quick Sort.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "8. Quick Sort, Pointers.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "9. Manual Memory Management and Dynamic Arrays.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Algorithm Design and Applications Michael Goodrich and Robert Tamassia.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "CLRS.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DataStructures.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Dsa hw 11.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DSA HW-10.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DSA HW-5.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DSA HW-6.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DSA HW-7.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "DSA HW-8.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "End-Sem rubric.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Endsem Question Paper.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-1.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-10.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-11.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-2.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-3.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-4.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-5.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-6.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-7.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-8.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "HOMEWORK-9.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Homework-SOL-1.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Homework-SOL-2.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Homework-SOL-3.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Homework-SOL-4.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Homework-SOL-9.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Midsem Question Paper.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Midsem Rubric.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Narasimha Karumanchi - Data structures and algorithms made easy (0, CareerMonk).pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "PA1.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "PA2.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "PA3.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "PA4.pdf",
-      "type": "pdf"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "Rubrics.rar",
-      "type": "rar"
-    },
-    {
-      "subject": "DSA",
-      "year": "2023",
-      "name": "test.txt",
-      "type": "txt"
-    }
-  ],
+  "recentAddedFiles": [],
   "subjectSummaries": [
     {
       "subject": "ABIN",
@@ -445,7 +42,7 @@
         "2022",
         "2021"
       ],
-      "diff": 5
+      "diff": 0
     },
     {
       "subject": "ADDV",
@@ -587,19 +184,19 @@
     },
     {
       "subject": "CG",
-      "totalFiles": 61,
+      "totalFiles": 39,
       "years": [
         "2023"
       ],
-      "diff": 0
+      "diff": -22
     },
     {
       "subject": "CGAS",
-      "totalFiles": 2,
+      "totalFiles": 1,
       "years": [
         "2024"
       ],
-      "diff": 0
+      "diff": -1
     },
     {
       "subject": "CM",
@@ -772,7 +369,7 @@
         "2023",
         "2022"
       ],
-      "diff": 62
+      "diff": 0
     },
     {
       "subject": "DSc",

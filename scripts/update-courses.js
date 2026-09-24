@@ -52,17 +52,37 @@ const ALLOWED_EXTENSIONS = new Set([
 
 function isAllowedFile(filePath, filename, ext) {
   if (!ALLOWED_EXTENSIONS.has(ext)) return false
-  const lower = filePath.toLowerCase()
+  const lowerPath = filePath.toLowerCase()
+  const lowerFile = filename.toLowerCase()
+
+  // Ignore system, build, IDE, and version control noise
   if (
-    lower.includes('/cmakefiles/') ||
-    lower.includes('/node_modules/') ||
-    lower.includes('/.git/') ||
-    lower.includes('/build/') ||
-    lower.includes('/dist/') ||
-    lower.includes('/compilerid')
+    lowerPath.includes('/cmakefiles/') ||
+    lowerPath.includes('/node_modules/') ||
+    lowerPath.includes('/.git/') ||
+    lowerPath.includes('/.github/') ||
+    lowerPath.includes('/build/') ||
+    lowerPath.includes('/dist/') ||
+    lowerPath.includes('/compilerid') ||
+    lowerPath.includes('/__macosx/') ||
+    lowerPath.includes('/.idea/') ||
+    lowerPath.includes('/.vscode/')
   ) {
     return false
   }
+
+  // Ignore hidden files and OS artifacts
+  if (
+    filename.startsWith('.') ||
+    filename.startsWith('~') ||
+    filename.endsWith('~') ||
+    lowerFile === 'thumbs.db' ||
+    lowerFile === 'desktop.ini' ||
+    lowerFile === '.ds_store'
+  ) {
+    return false
+  }
+
   return true
 }
 
@@ -168,8 +188,8 @@ async function syncCourses() {
   }
 
   const data = await response.json()
-  if (!data.tree || !Array.isArray(data.tree)) {
-    throw new Error('Unexpected API response structure from GitHub.')
+  if (!data.tree || !Array.isArray(data.tree) || data.tree.length < 50) {
+    throw new Error(`Sanity check failed: GitHub API returned only ${data.tree?.length || 0} entries. Aborting to protect course data.`)
   }
 
   // Load previous dataset to calculate exact diffs
@@ -228,11 +248,18 @@ async function syncCourses() {
       yearMap.set(year, [])
     }
 
-    yearMap.get(year).push({
-      path: blob.path,
-      name: filename,
-      type: ext
-    })
+    const yearFiles = yearMap.get(year)
+    // Avoid duplicate entries by name or path
+    const isDup = yearFiles.some(
+      (f) => f.name.toLowerCase() === filename.toLowerCase() || f.path === blob.path
+    )
+    if (!isDup) {
+      yearFiles.push({
+        path: blob.path,
+        name: filename,
+        type: ext
+      })
+    }
   }
 
   // Handle any submodule or nested commit folders dynamically
@@ -252,8 +279,12 @@ async function syncCourses() {
     }
     for (const df of dynamicFiles) {
       if (!isAllowedFile(df.path, df.name, df.type)) continue
-      if (!yearMap.get(year).some((f) => f.name === df.name)) {
-        yearMap.get(year).push(df)
+      const yearFiles = yearMap.get(year)
+      const isDup = yearFiles.some(
+        (f) => f.name.toLowerCase() === df.name.toLowerCase() || f.path === df.path
+      )
+      if (!isDup) {
+        yearFiles.push(df)
       }
     }
   }
@@ -281,7 +312,10 @@ async function syncCourses() {
     let subjectTotalFiles = 0
 
     const formattedYears = orderedYears.map((year) => {
-      const files = yearMap.get(year).sort((a, b) => a.name.localeCompare(b.name))
+      // Deterministic sort: files sorted alphabetically by filename
+      const files = yearMap.get(year).sort((a, b) =>
+        a.name.localeCompare(b.name, undefined, { sensitivity: 'base', numeric: true })
+      )
       subjectTotalFiles += files.length
 
       for (const f of files) {
@@ -321,12 +355,20 @@ async function syncCourses() {
     }
   }
 
-  const jsonContent = JSON.stringify(result, null, 2)
+  const jsonContent = JSON.stringify(result, null, 2) + '\n'
 
-  // 1. Write src/courseData.json
-  fs.writeFileSync(srcCourseDataPath, jsonContent, 'utf8')
-  // 2. Write public/courseData.json (for direct static fetches & PWA precache)
-  fs.writeFileSync(publicCourseDataPath, jsonContent, 'utf8')
+  // Load raw disk content to check for exact byte equality
+  let existingRaw = ''
+  if (fs.existsSync(srcCourseDataPath)) {
+    try {
+      existingRaw = fs.readFileSync(srcCourseDataPath, 'utf8')
+    } catch {}
+  }
+
+  const isDataIdentical = (existingRaw.trim() === jsonContent.trim())
+  const hasAddedFiles = addedFilesList.length > 0
+  const hasRemovedFiles = removedFilesList.length > 0
+  const hasChanges = !isDataIdentical || hasAddedFiles || hasRemovedFiles
 
   // Calculate high level stats
   const totalFiles = result.reduce(
@@ -340,6 +382,24 @@ async function syncCourses() {
 
   const newlyAddedSubjects = sortedSubjects.filter((s) => !prevSubjectMap.has(s))
   const removedSubjects = Array.from(prevSubjectMap.keys()).filter((s) => !subjectMap.has(s))
+
+  // IDEMPOTENCY GUARD: If no changes whatsoever, do not touch ANY files on disk!
+  if (!hasChanges) {
+    console.log('\n' + '='.repeat(70))
+    console.log('✨ EVERYTHING IS ALREADY UP-TO-DATE!')
+    console.log('='.repeat(70))
+    console.log(`📚 Total Subjects:       ${result.length} (up-to-date)`)
+    console.log(`📄 Total Course Files:   ${totalFiles.toLocaleString()} (up-to-date)`)
+    console.log(`🔒 Added: 0, Removed: 0`)
+    console.log(`⚡ Datasets left untouched on disk to prevent redundant Git commits.`)
+    console.log('='.repeat(70) + '\n')
+    return
+  }
+
+  // 1. Write src/courseData.json
+  fs.writeFileSync(srcCourseDataPath, jsonContent, 'utf8')
+  // 2. Write public/courseData.json (for direct static fetches & PWA precache)
+  fs.writeFileSync(publicCourseDataPath, jsonContent, 'utf8')
 
   // Build Sync Report
   const syncReport = {
@@ -369,8 +429,8 @@ async function syncCourses() {
     fs.mkdirSync(srcDataDir, { recursive: true })
   }
 
-  fs.writeFileSync(srcSyncReportPath, JSON.stringify(syncReport, null, 2), 'utf8')
-  fs.writeFileSync(publicSyncReportPath, JSON.stringify(syncReport, null, 2), 'utf8')
+  fs.writeFileSync(srcSyncReportPath, JSON.stringify(syncReport, null, 2) + '\n', 'utf8')
+  fs.writeFileSync(publicSyncReportPath, JSON.stringify(syncReport, null, 2) + '\n', 'utf8')
 
   // Output Full Information
   console.log('\n' + '='.repeat(70))
