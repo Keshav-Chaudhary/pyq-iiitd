@@ -38,6 +38,45 @@ This platform features a responsive glassmorphic aesthetic designed to make navi
 
 ---
 
+## 📸 Platform Previews
+
+### 1. Home / Landing Page
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/home-web.png" width="600" alt="Home Web" /> | <img src="docs/screenshots/home-mobile.png" width="200" alt="Home Mobile" /> |
+
+### 2. Menu Bar / Navigation
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/menu-web.png" width="600" alt="Menu Web" /> | <img src="docs/screenshots/menu-mobile.png" width="200" alt="Menu Mobile" /> |
+
+### 3. Subjects Explorer (`/subjects`)
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/subjects-web.png" width="600" alt="Subjects Web" /> | <img src="docs/screenshots/subjects-mobile.png" width="200" alt="Subjects Mobile" /> |
+
+### 4. Subject Details (`/subject/:id`)
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/subject-details-web.png" width="600" alt="Subject Details Web" /> | <img src="docs/screenshots/subject-details-mobile.png" width="200" alt="Subject Details Mobile" /> |
+
+### 5. Resources Hub & Timeline (`/resources`)
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/resources-web.png" width="600" alt="Resources Web" /> | <img src="docs/screenshots/resources-mobile.png" width="200" alt="Resources Mobile" /> |
+
+### 6. Contributors Dashboard (`/contributors`)
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/contributors-web.png" width="600" alt="Contributors Web" /> | <img src="docs/screenshots/contributors-mobile.png" width="200" alt="Contributors Mobile" /> |
+
+### 7. Analytics (`/analytics`)
+| Web View | Mobile View |
+| :---: | :---: |
+| <img src="docs/screenshots/analytics-web.png" width="600" alt="Analytics Web" /> | <img src="docs/screenshots/analytics-mobile.png" width="200" alt="Analytics Mobile" /> |
+
+---
+
 ## 🛠 Tech Stack
 
 - **Framework**: React 18 + Vite
