@@ -1,0 +1,86 @@
+name: Automated PYQ Sync & Firebase Deploy
+
+on:
+  schedule:
+    # Automatically run every day at 00:00 UTC (05:30 AM IST)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Force build and deploy to Firebase even if no new files'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  sync_and_deploy:
+    name: Sync NalishJain PYQs & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 🔄 Sync Latest Courses from NalishJain/IIITD-PYQs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run sync
+
+      - name: 🔍 Check for Data Changes
+        id: check_changes
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain src/courseData.json public/courseData.json src/data/syncReport.json public/data/syncReport.json)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in course data."
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected."
+          fi
+
+      - name: 🚀 Commit and Push Updated Course Data
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/courseData.json public/courseData.json src/data/syncReport.json public/data/syncReport.json
+          git commit -m "chore(pyq): auto-sync course files from NalishJain/IIITD-PYQs [skip ci]"
+          git push origin main || git push origin master
+
+      - name: 🏗️ Build Application
+        if: steps.check_changes.outputs.has_changes == 'true' || inputs.force_deploy == true
+        run: npm run build
+
+      - name: 🌐 Deploy to Firebase Hosting (via Service Account)
+        if: (steps.check_changes.outputs.has_changes == 'true' || inputs.force_deploy == true) && env.HAS_SA == 'true'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        env:
+          HAS_SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PYQ_IIITD != '' }}
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PYQ_IIITD }}
+          channelId: live
+          projectId: pyq-iiitd
+
+      - name: 🌐 Deploy to Firebase Hosting (Fallback via Firebase Token)
+        if: (steps.check_changes.outputs.has_changes == 'true' || inputs.force_deploy == true) && env.HAS_TOKEN == 'true' && env.HAS_SA != 'true'
+        env:
+          HAS_TOKEN: ${{ secrets.FIREBASE_TOKEN != '' }}
+          HAS_SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PYQ_IIITD != '' }}
+        run: npx firebase-tools deploy --only hosting --token "${{ secrets.FIREBASE_TOKEN }}" --non-interactive

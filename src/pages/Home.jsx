@@ -264,7 +264,7 @@ export default function Home() {
             </div>
             <div className="hstat-divider" />
             <div className="hstat">
-              <div className="hstat-num">{STATS.files}+</div>
+              <div className="hstat-num">{STATS.files.toLocaleString()}</div>
               <div className="hstat-label">Files</div>
             </div>
             <div className="hstat-divider" />

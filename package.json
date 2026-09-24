@@ -6,6 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "sync": "node scripts/update-courses.js",
+    "sync:push": "node scripts/update-courses.js --push",
+    "sync:deploy": "node scripts/update-courses.js --deploy",
+    "sync:all": "node scripts/update-courses.js --all",
+    "update:data": "node scripts/update-courses.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && firebase deploy --only hosting"

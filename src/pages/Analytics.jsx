@@ -60,11 +60,13 @@ export default function Analytics() {
       byType[t] = (byType[t] || 0) + 1
     })))
 
-    // Years sorted
-    const yearsSorted = Object.entries(byYear).sort((a, b) => a[0].localeCompare(b[0]))
+    // Years sorted numerically ascending
+    const yearsSorted = Object.entries(byYear).sort((a, b) => parseInt(a[0], 10) - parseInt(b[0], 10))
 
     // Additional derived metrics
     const avgFilesPerSubject = Math.round(totalFiles / courseData.length)
+    const totalActiveBranches = Object.values(byBranch).filter((b) => b.subjects > 0).length
+    const totalYears = Object.keys(byYear).length
     
     let mostActiveBranch = { label: 'None', count: 0 }
     Object.values(byBranch).forEach(b => {
@@ -75,19 +77,22 @@ export default function Analytics() {
 
     return { 
       totalFiles, byBranch, topSubjects, byType, yearsSorted, comprehensiveSubjects,
-      avgFilesPerSubject, mostActiveBranch, latestYearObj
+      avgFilesPerSubject, totalActiveBranches, totalYears, mostActiveBranch, latestYearObj
     }
   }, [])
 
-  const maxBranchCount = Math.max(...Object.values(stats.byBranch).map((b) => b.count))
-  const maxYearCount   = Math.max(...stats.yearsSorted.map(([, v]) => v))
+  const maxBranchCount = Math.max(...Object.values(stats.byBranch).map((b) => b.count), 1)
+  const maxYearCount   = Math.max(...stats.yearsSorted.map(([, v]) => v), 1)
   const maxSubjCount   = stats.topSubjects[0]?.count || 1
   const maxCompYearCount = stats.comprehensiveSubjects[0]?.yearCount || 1
 
   const TYPE_COLORS = {
     pdf: '#ef4444', docx: '#3b82f6', doc: '#3b82f6',
-    jpg: '#10b981', jpeg: '#10b981', png: '#10b981',
-    zip: '#f59e0b', txt: '#8b5cf6',
+    jpg: '#10b981', jpeg: '#10b981', png: '#10b981', webp: '#10b981',
+    zip: '#f59e0b', rar: '#f59e0b', '7z': '#f59e0b',
+    txt: '#8b5cf6', pptx: '#ec4899', ppt: '#ec4899',
+    xlsx: '#06b6d4', xls: '#06b6d4', csv: '#06b6d4',
+    ipynb: '#f97316'
   }
 
   return (
@@ -97,7 +102,7 @@ export default function Analytics() {
         <div className="an-header-glow" aria-hidden="true" />
         <div className="container">
           <h1 className="an-title"><span className="an-title-gradient">Repository Analytics</span></h1>
-          <p className="an-sub">Deep dive into {stats.totalFiles}+ academic resources across {courseData.length} subjects.</p>
+          <p className="an-sub">Deep dive into {stats.totalFiles.toLocaleString()} academic resources across {courseData.length} subjects and {stats.totalYears} academic years.</p>
         </div>
       </div>
 
@@ -116,12 +121,12 @@ export default function Analytics() {
               ))
             ) : (
               [
-                { label: 'Total Files',    value: `${stats.totalFiles}+`, icon: <FileText size={18} strokeWidth={2.5} /> },
+                { label: 'Total Files',    value: stats.totalFiles.toLocaleString(), icon: <FileText size={18} strokeWidth={2.5} /> },
                 { label: 'Total Subjects', value: courseData.length, icon: <BookOpen size={18} strokeWidth={2.5} /> },
-                { label: 'Branches',       value: Object.keys(stats.byBranch).length, icon: <GraduationCap size={18} strokeWidth={2.5} /> },
+                { label: 'Active Branches', value: stats.totalActiveBranches, icon: <GraduationCap size={18} strokeWidth={2.5} />, subValue: `${BRANCHES.length - 1} configured` },
                 { label: 'Avg Files / Subj', value: stats.avgFilesPerSubject, icon: <BarChart3 size={18} strokeWidth={2.5} /> },
-                { label: 'Top Branch',     value: stats.mostActiveBranch.label, icon: <Layers size={18} strokeWidth={2.5} />, subValue: `${stats.mostActiveBranch.count} files` },
-                { label: `Added in ${stats.latestYearObj[0]}`, value: stats.latestYearObj[1], icon: <Clock size={18} strokeWidth={2.5} />, subValue: 'Latest Year' },
+                { label: 'Top Branch',     value: stats.mostActiveBranch.label, icon: <Layers size={18} strokeWidth={2.5} />, subValue: `${stats.mostActiveBranch.count.toLocaleString()} files` },
+                { label: `${stats.latestYearObj[0]} Papers`, value: stats.latestYearObj[1].toLocaleString(), icon: <Clock size={18} strokeWidth={2.5} />, subValue: 'Latest Batch' },
               ].map((k, i) => (
                 <div key={k.label} className="kpi-card" style={{ animationDelay: `${i * 50}ms` }}>
                   <div className="kpi-icon">{k.icon}</div>

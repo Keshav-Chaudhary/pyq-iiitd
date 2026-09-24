@@ -36,6 +36,8 @@ export const SUBJECT_META = {
   DSCD:  { full: 'Distributed Systems: Concepts & Design',        branch: 'CSE' },
   EAI:   { full: 'Edge AI',                         branch: 'CSAI', code: 'SSH325' },
   UsS:   { full: 'Usable Security and Privacy',                    branch: 'CSE' },
+  AC:    { full: 'Applied Cryptography',                           branch: 'CSE' },
+  ST:    { full: 'Software Testing',                               branch: 'CSE' },
 
   // Artificial Intelligence & Machine Learning (CSAI)
   AI:    { full: 'Artificial Intelligence',            branch: 'CSAI', code: 'CSE643' },
@@ -49,6 +51,7 @@ export const SUBJECT_META = {
   LLM:   { full: 'Large Language Models',              branch: 'CSAI' },
   DMMRS: { full: 'Decision Making for Multi-robot Systems', branch: 'CSAI' },
   'DMMRS 2025': { full: 'Deep Models & Multimodal Reasoning', branch: 'CSAI' },
+  NAI:   { full: 'Networked AI',                       branch: 'CSAI' },
 
   // Applied Mathematics (CSAM)
   DM:    { full: 'Discrete Mathematics',               branch: 'CSAM', code: 'CSE121' },
@@ -97,8 +100,10 @@ export const SUBJECT_META = {
   IIA:   { full: 'Information Integration and Applications', branch: 'CSB' },
   MC:    { full: 'Mobile Computing',              branch: 'CSB' },
   IQB:   { full: 'Introduction to Quantitative Biology', branch: 'CSB', code: 'BIO213' },
+  'CeB(Cellular Biophysics)': { full: 'Cellular Biophysics', branch: 'CSB' },
 
   // Social Sciences (CSSS)
+  COM:   { full: 'Communication Skills', branch: 'CSSS', code: 'COM101' },
   'Communication Skills': { full: 'Communication Skills', branch: 'CSSS', code: 'COM101' },
   EVS:   { full: 'Environmental Sciences',              branch: 'CSSS' },
   AP:    { full: 'Advanced Programming',                 branch: 'CSSS', code: 'CSE201' },

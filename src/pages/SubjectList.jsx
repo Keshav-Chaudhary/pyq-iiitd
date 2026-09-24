@@ -174,7 +174,7 @@ export default function SubjectList() {
           {BRANCHES.map((b) => {
             const count = b.id === 'all'
               ? courseData.length
-              : filteredSubjects.filter((s) => getBranch(s.subject) === b.id || COURSE_ROWS.some(r => r.branch_code === b.id && r.course_code_hint?.toUpperCase() === s.subject.toUpperCase())).length
+              : courseData.filter((s) => getBranch(s.subject) === b.id || COURSE_ROWS.some(r => r.branch_code === b.id && r.course_code_hint?.toUpperCase() === s.subject.toUpperCase())).length
 
             const isActive = branch === b.id
 

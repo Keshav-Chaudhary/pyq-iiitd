@@ -1,0 +1,930 @@
+{
+  "timestamp": "2026-09-24T07:34:46.538Z",
+  "sourceRepo": "NalishJain/IIITD-PYQs",
+  "branch": "main",
+  "stats": {
+    "totalSubjects": 98,
+    "totalFiles": 1664,
+    "previousTotalFiles": 1731,
+    "newFilesCount": 0,
+    "removedFilesCount": 67
+  },
+  "newlyAddedSubjects": [],
+  "removedSubjects": [],
+  "recentAddedFiles": [],
+  "subjectSummaries": [
+    {
+      "subject": "ABIN",
+      "totalFiles": 20,
+      "years": [
+        "2024",
+        "2023",
+        "2021",
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "AC",
+      "totalFiles": 11,
+      "years": [
+        "2026"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ADA",
+      "totalFiles": 42,
+      "years": [
+        "2026",
+        "2024",
+        "2023",
+        "2022",
+        "2021"
+      ],
+      "diff": -5
+    },
+    {
+      "subject": "ADDV",
+      "totalFiles": 4,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "AI",
+      "totalFiles": 38,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "AP",
+      "totalFiles": 17,
+      "years": [
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ATP",
+      "totalFiles": 19,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "AUC",
+      "totalFiles": 4,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BAOC",
+      "totalFiles": 2,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BDA",
+      "totalFiles": 33,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BDMH",
+      "totalFiles": 10,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BE",
+      "totalFiles": 43,
+      "years": [
+        "2025",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BioP",
+      "totalFiles": 14,
+      "years": [
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "BioStats",
+      "totalFiles": 12,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CA",
+      "totalFiles": 25,
+      "years": [
+        "2023",
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CADD",
+      "totalFiles": 5,
+      "years": [
+        "2025",
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CBB",
+      "totalFiles": 13,
+      "years": [
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CeB(Cellular Biophysics)",
+      "totalFiles": 6,
+      "years": [
+        "2026"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CG",
+      "totalFiles": 61,
+      "years": [
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CGAS",
+      "totalFiles": 2,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CM",
+      "totalFiles": 15,
+      "years": [
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CMM",
+      "totalFiles": 5,
+      "years": [
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CN",
+      "totalFiles": 15,
+      "years": [
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CO",
+      "totalFiles": 28,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "Communication Skills",
+      "totalFiles": 3,
+      "years": [
+        "2024",
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ComN",
+      "totalFiles": 2,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "COO",
+      "totalFiles": 38,
+      "years": [
+        "2026",
+        "2025",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CTD",
+      "totalFiles": 6,
+      "years": [
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CTRSS",
+      "totalFiles": 3,
+      "years": [
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "CV",
+      "totalFiles": 39,
+      "years": [
+        "2026",
+        "2025",
+        "2024",
+        "2023",
+        "2014"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DBMS",
+      "totalFiles": 17,
+      "years": [
+        "2026",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DC",
+      "totalFiles": 20,
+      "years": [
+        "2024",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DL",
+      "totalFiles": 2,
+      "years": [
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DM",
+      "totalFiles": 17,
+      "years": [
+        "2023",
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DMMRS",
+      "totalFiles": 12,
+      "years": [
+        "2026",
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DR",
+      "totalFiles": 12,
+      "years": [
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DS",
+      "totalFiles": 40,
+      "years": [
+        "2025",
+        "2024",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DSA",
+      "totalFiles": 23,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": -62
+    },
+    {
+      "subject": "DSc",
+      "totalFiles": 14,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DSCD",
+      "totalFiles": 2,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DSP",
+      "totalFiles": 28,
+      "years": [
+        "2024",
+        "2023",
+        "2022",
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "DVD",
+      "totalFiles": 30,
+      "years": [
+        "2024",
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "EAI",
+      "totalFiles": 5,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "EEE",
+      "totalFiles": 4,
+      "years": [
+        "2026",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "EI",
+      "totalFiles": 3,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "EVS",
+      "totalFiles": 4,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "FF",
+      "totalFiles": 30,
+      "years": [
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "FOB",
+      "totalFiles": 1,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "GMB",
+      "totalFiles": 12,
+      "years": [
+        "2024",
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "GMT",
+      "totalFiles": 46,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "GS",
+      "totalFiles": 4,
+      "years": [
+        "2026",
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "GT",
+      "totalFiles": 25,
+      "years": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "HCI",
+      "totalFiles": 2,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IIA",
+      "totalFiles": 4,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IIS",
+      "totalFiles": 23,
+      "years": [
+        "2025",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "InT",
+      "totalFiles": 10,
+      "years": [
+        "2023",
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IP",
+      "totalFiles": 8,
+      "years": [
+        "2024",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IQB",
+      "totalFiles": 16,
+      "years": [
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IR",
+      "totalFiles": 16,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "IROB",
+      "totalFiles": 8,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ISA",
+      "totalFiles": 2,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "LA",
+      "totalFiles": 37,
+      "years": [
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "LLM",
+      "totalFiles": 7,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "M3",
+      "totalFiles": 58,
+      "years": [
+        "2025",
+        "2024",
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "M4",
+      "totalFiles": 62,
+      "years": [
+        "2024",
+        "2023",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "MAD",
+      "totalFiles": 18,
+      "years": [
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "MB",
+      "totalFiles": 13,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "MC",
+      "totalFiles": 6,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ML",
+      "totalFiles": 13,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "MLBA",
+      "totalFiles": 5,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "MTL",
+      "totalFiles": 9,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NAI",
+      "totalFiles": 6,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NDM",
+      "totalFiles": 1,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NEID",
+      "totalFiles": 1,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NLP",
+      "totalFiles": 38,
+      "years": [
+        "2026",
+        "2025",
+        "2024",
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NS",
+      "totalFiles": 5,
+      "years": [
+        "2026",
+        "2025",
+        "2024",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NSc",
+      "totalFiles": 33,
+      "years": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "NT",
+      "totalFiles": 52,
+      "years": [
+        "2022",
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "OS",
+      "totalFiles": 30,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "PB",
+      "totalFiles": 5,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "PNS",
+      "totalFiles": 25,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "PRMP",
+      "totalFiles": 8,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "QM",
+      "totalFiles": 7,
+      "years": [
+        "Other"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "RL",
+      "totalFiles": 14,
+      "years": [
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "S&S",
+      "totalFiles": 59,
+      "years": [
+        "2025",
+        "2023",
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "SC",
+      "totalFiles": 5,
+      "years": [
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "SDOS",
+      "totalFiles": 1,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "SI",
+      "totalFiles": 48,
+      "years": [
+        "2025",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "SML",
+      "totalFiles": 30,
+      "years": [
+        "2026",
+        "2025",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "SPA",
+      "totalFiles": 12,
+      "years": [
+        "2021"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "ST",
+      "totalFiles": 2,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "TC",
+      "totalFiles": 3,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "TDL",
+      "totalFiles": 5,
+      "years": [
+        "2024"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "TOC",
+      "totalFiles": 30,
+      "years": [
+        "2026",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "UsS",
+      "totalFiles": 12,
+      "years": [
+        "2025"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "VDF",
+      "totalFiles": 3,
+      "years": [
+        "2022"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "VPM",
+      "totalFiles": 16,
+      "years": [
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    },
+    {
+      "subject": "WN",
+      "totalFiles": 10,
+      "years": [
+        "2024",
+        "2023"
+      ],
+      "diff": 0
+    }
+  ]
+}

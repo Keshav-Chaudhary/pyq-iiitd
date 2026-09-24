@@ -7,10 +7,11 @@ import NotFound from './NotFound'
 import { useToast } from '../context/ToastContext'
 import '../styles/SubjectDetail.css'
 
-const EXT_ICON = { pdf:'📄', docx:'📝', doc:'📝', jpg:'🖼️', jpeg:'🖼️', png:'🖼️', zip:'🗜️', txt:'📃' }
+const EXT_ICON = { pdf:'📄', docx:'📝', doc:'📝', jpg:'🖼️', jpeg:'🖼️', png:'🖼️', webp:'🖼️', zip:'🗜️', rar:'🗜️', '7z':'🗜️', txt:'📃', pptx:'📊', ppt:'📊', xlsx:'📈', xls:'📈', ipynb:'📓' }
 const getIcon = (t) => EXT_ICON[t?.toLowerCase()] || '📎'
 
 function getFileUrl(filePath) {
+  if (filePath.startsWith('http://') || filePath.startsWith('https://')) return filePath
   return `https://raw.githubusercontent.com/NalishJain/IIITD-PYQs/main/${filePath.split('/').map(encodeURIComponent).join('/')}`
 }
 
