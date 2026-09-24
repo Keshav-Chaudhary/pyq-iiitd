@@ -264,7 +264,33 @@
       },
       {
         "year": "2024",
-        "files": []
+        "files": [
+          {
+            "path": "https://github.com/NalishJain/IIITD-PYQs/raw/1cda718728a64e8c4eed52e9a1b73ef65009c5ad/ADA%2FADA_2024%2FADA%20Quiz-3%20Solutions.pdf",
+            "name": "ADA Quiz-3 Solutions.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://github.com/NalishJain/IIITD-PYQs/raw/1cda718728a64e8c4eed52e9a1b73ef65009c5ad/ADA%2FADA_2024%2FADA%20Quiz-4%20solution.pdf",
+            "name": "ADA Quiz-4 solution.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://github.com/NalishJain/IIITD-PYQs/raw/1cda718728a64e8c4eed52e9a1b73ef65009c5ad/ADA%2FADA_2024%2FADA-24%20Sec-A%20End-sem%20Solution-rubric.pdf",
+            "name": "ADA-24 Sec-A End-sem Solution-rubric.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://github.com/NalishJain/IIITD-PYQs/raw/1cda718728a64e8c4eed52e9a1b73ef65009c5ad/ADA%2FADA_2024%2FQuiz-1%20Solutions.pdf",
+            "name": "Quiz-1 Solutions.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://github.com/NalishJain/IIITD-PYQs/raw/1cda718728a64e8c4eed52e9a1b73ef65009c5ad/ADA%2FADA_2024%2FQuiz-2%20Solution.pdf",
+            "name": "Quiz-2 Solution.pdf",
+            "type": "pdf"
+          }
+        ]
       },
       {
         "year": "2023",
@@ -3988,7 +4014,318 @@
       },
       {
         "year": "2023",
-        "files": []
+        "files": [
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/1.%20Intro%20to%20C.pdf",
+            "name": "1. Intro to C.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/10.%20Linked%20List.pdf",
+            "name": "10. Linked List.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/11.%20linked%20list,%20Stacks%20and%20Queues.pdf",
+            "name": "11. linked list, Stacks and Queues.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/12.%20Trees,%20BST.pdf",
+            "name": "12. Trees, BST.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/13.%20BST,%20AVL.pdf",
+            "name": "13. BST, AVL.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/14.%20AVL%20Trees.pdf",
+            "name": "14. AVL Trees.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/15.%20Heap,%20Heapsort.pdf",
+            "name": "15. Heap, Heapsort.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/16.%20Intro%20to%20Priority%20Queue%20and%20Tries,%20Graphs.pdf",
+            "name": "16. Intro to Priority Queue and Tries, Graphs.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/17.%20Graphs.pdf",
+            "name": "17. Graphs.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/18.%20BFS.pdf",
+            "name": "18. BFS.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/19.%20DFS%20and%20Topological%20Sort.pdf",
+            "name": "19. DFS and Topological Sort.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/2.%20Basic%20Recursion.pdf",
+            "name": "2. Basic Recursion.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/20.%20Topological%20Sort,%20Bipartite%20Graph,%20Strongly%20Connected%20Components.pdf",
+            "name": "20. Topological Sort, Bipartite Graph, Strongly Connected Components.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/21.%20SCC,%20Single%20Source-Shortest%20Path.pdf",
+            "name": "21. SCC, Single Source-Shortest Path.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/22.%20Dijkstra's%20Algorithm,%20Minimum%20Spanning%20Tree.pdf",
+            "name": "22. Dijkstra's Algorithm, Minimum Spanning Tree.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/23.%20Kruskal's%20Algorithm%20and%20Disjoint%20Sets.pdf",
+            "name": "23. Kruskal's Algorithm and Disjoint Sets.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/24.%20Prim's%20Algorithm,%20Hash%20tables.pdf",
+            "name": "24. Prim's Algorithm, Hash tables.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/25.%20Hash%20Tables.pdf",
+            "name": "25. Hash Tables.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/26.%20Huffman%20Coding%20and%20Decision%20Trees.pdf",
+            "name": "26. Huffman Coding and Decision Trees.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/3.%20Fibonacci,%20Binary%20search.pdf",
+            "name": "3. Fibonacci, Binary search.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/3.%20Tower%20of%20Hanoi.pdf",
+            "name": "3. Tower of Hanoi.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/5.%20Asymptotic%20Analysis%20(Time%20complexity).pdf",
+            "name": "5. Asymptotic Analysis (Time complexity).pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/6.%20Asymptotic%20Notation%20and%20Time%20Complexity.pdf",
+            "name": "6. Asymptotic Notation and Time Complexity.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/7.%20Merge%20Sort,%20Quick%20Sort.pdf",
+            "name": "7. Merge Sort, Quick Sort.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/8.%20Quick%20Sort,%20Pointers.pdf",
+            "name": "8. Quick Sort, Pointers.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Lecture%20Slides/9.%20Manual%20Memory%20Management%20and%20Dynamic%20Arrays.pdf",
+            "name": "9. Manual Memory Management and Dynamic Arrays.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Reference%20Books/Algorithm%20Design%20and%20Applications%20Michael%20Goodrich%20and%20Robert%20Tamassia.pdf",
+            "name": "Algorithm Design and Applications Michael Goodrich and Robert Tamassia.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Reference%20Books/CLRS.pdf",
+            "name": "CLRS.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Reference%20Books/DataStructures.pdf",
+            "name": "DataStructures.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW11/Dsa%20hw%2011.pdf",
+            "name": "Dsa hw 11.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW10/DSA%20HW-10.pdf",
+            "name": "DSA HW-10.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW5/DSA%20HW-5.pdf",
+            "name": "DSA HW-5.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW6/DSA%20HW-6.pdf",
+            "name": "DSA HW-6.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW7/DSA%20HW-7.pdf",
+            "name": "DSA HW-7.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW8/DSA%20HW-8.pdf",
+            "name": "DSA HW-8.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Endsem/End-Sem%20rubric.pdf",
+            "name": "End-Sem rubric.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Endsem/Endsem%20Question%20Paper.pdf",
+            "name": "Endsem Question Paper.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-1.pdf",
+            "name": "HOMEWORK-1.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-10.pdf",
+            "name": "HOMEWORK-10.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-11.pdf",
+            "name": "HOMEWORK-11.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-2.pdf",
+            "name": "HOMEWORK-2.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-3.pdf",
+            "name": "HOMEWORK-3.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-4.pdf",
+            "name": "HOMEWORK-4.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-5.pdf",
+            "name": "HOMEWORK-5.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-6.pdf",
+            "name": "HOMEWORK-6.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-7.pdf",
+            "name": "HOMEWORK-7.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-8.pdf",
+            "name": "HOMEWORK-8.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homeworks/HOMEWORK-9.pdf",
+            "name": "HOMEWORK-9.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW1/Homework-SOL-1.pdf",
+            "name": "Homework-SOL-1.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW2/Homework-SOL-2.pdf",
+            "name": "Homework-SOL-2.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW3/Homework-SOL-3.pdf",
+            "name": "Homework-SOL-3.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW4/Homework-SOL-4.pdf",
+            "name": "Homework-SOL-4.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Homework%20Solutions/HW9/Homework-SOL-9.pdf",
+            "name": "Homework-SOL-9.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Midsem/Midsem%20Question%20Paper.pdf",
+            "name": "Midsem Question Paper.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Midsem/Midsem%20Rubric.pdf",
+            "name": "Midsem Rubric.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Reference%20Books/Narasimha%20Karumanchi%20-%20Data%20structures%20and%20algorithms%20made%20easy%20(0,%20CareerMonk).pdf",
+            "name": "Narasimha Karumanchi - Data structures and algorithms made easy (0, CareerMonk).pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Labs/PA1.pdf",
+            "name": "PA1.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Labs/PA2.pdf",
+            "name": "PA2.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Labs/PA3.pdf",
+            "name": "PA3.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/DSA%20Labs/PA4.pdf",
+            "name": "PA4.pdf",
+            "type": "pdf"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/Rubrics.rar",
+            "name": "Rubrics.rar",
+            "type": "rar"
+          },
+          {
+            "path": "https://raw.githubusercontent.com/aniket-3001/DSA/main/test.txt",
+            "name": "test.txt",
+            "type": "txt"
+          }
+        ]
       },
       {
         "year": "2022",
