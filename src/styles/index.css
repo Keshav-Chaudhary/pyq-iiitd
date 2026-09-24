@@ -448,6 +448,10 @@ h1, h2, h3, h4 { line-height: 1.25; letter-spacing: -0.02em; }
 }
 
 .footer-copy {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
   font-size: 0.78rem;
   color: #64748b;
 }

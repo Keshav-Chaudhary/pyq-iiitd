@@ -1,145 +1,105 @@
 # IIITD PYQs Platform
 
-Welcome to the **IIITD PYQs Platform** – the ultimate, premium, student-driven repository and curriculum guide for IIIT-Delhi. 
+[![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-18.3-blue.svg)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF.svg)](https://vitejs.dev)
+[![PWA](https://img.shields.io/badge/PWA-Ready-success.svg)](https://web.dev/progressive-web-apps/)
+[![Security](https://img.shields.io/badge/Security-Hardened-emerald.svg)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
-This platform has been entirely redesigned with a highly responsive, modern glassmorphic aesthetic to ensure a seamless and engaging experience for students navigating past year papers, academic regulations, and curriculum structures.
+Welcome to the **IIITD PYQs Platform** – a modern, student-driven repository and curriculum guide for IIIT-Delhi. 
+
+This platform features a responsive glassmorphic aesthetic designed to make navigating past year papers, academic regulations, and curriculum structures fast, intuitive, and engaging.
 
 ---
 
-## 🚀 Version & Feature Highlights
+## 🚀 Key Features
 
-### **Version 1.0.0** (Current)
-*The platform has undergone a massive UI/UX overhaul focusing on premium aesthetics, mobile responsiveness, and enhanced resource mapping.*
+### 1. **Curriculum & Subject Explorer (`/subjects`)**
+- **Comprehensive Course Mapping**: Filter courses across B.Tech branches (CSE, ECE, CSAM, CSD, CSSS, CSB, CSAI) and all semesters.
+- **Flexible Views**: Switch between Grid and List views.
+- **Instant Search**: Client-side filtering by course code (e.g., `CSE102`, `MTH201`), subject name, or branch.
 
-#### 1. **Premium Glassmorphic UI & Design System**
-- **Theme**: Dark mode by default, featuring a highly refined palette consisting of deep teals (`#3FADA8`), subtle golds (`#D7D69D`), and rich dark backgrounds (`#0B0B0F`).
-- **Cards**: Implemented unique glassmorphic cards with backdrop blur, glowing hover effects, and intricate border-radiuses matching across all pages (`var(--r-xl)`).
-- **Backgrounds**: Signature dotted backgrounds with linear masks for depth.
-- **Animations**: Subtle fade-up entry animations (`animate-fadeup`) and gradient shifting across all page headers.
+### 2. **B.Tech Journey & Academic Hub (`/resources`)**
+- **Interactive 8-Semester Timeline**: Visual progression tracking branch transfer guidelines, internships, SG/CW, and credit requirements.
+- **Quick Portals**: Direct, categorized navigation to ERP, AXIS, and internal academic systems.
+- **Official Regulations**: Centralized links to current branch syllabi and ordinances.
 
-#### 2. **Dynamic Subject & Curriculum Explorer (`/subjects`)**
-- **Curriculum Mapping**: Complete mapping of IIITD courses categorized by Branch (CSE, ECE, CSAM, CSAI, etc.) and Semester.
-- **Toggle Views**: Switch between a beautiful Grid View and a compact List View for subjects.
-- **Interactive Accordions**: Filter courses by semester to view core, core-elective, and elective classifications.
-- **Advanced Search**: Intelligent client-side search that matches by course code, full name, or branch.
+### 3. **Dynamic Contributors Dashboard (`/contributors`)**
+- **GitHub API Integration**: Dynamic contributor recognition honoring both PYQ document uploaders and platform developers.
+- **Interactive 3D Podium**: Top contributors spotlighted with ranked podium styling.
+- **Live Stats**: Real-time repository metrics (Stars, Forks, Issues).
 
-#### 3. **The "B.Tech Journey" & Resources Hub (`/resources`)**
-- **Most Searched Portals**: Direct, stylish links to the ERP, AXIS, and SG/CW portals, indicating VPN requirements.
-- **Academic Regulations**: Centralized links to official B.Tech regulations for every branch.
-- **Interactive Journey Timeline**: A highly detailed, beautifully designed vertical timeline mapping out all 8 semesters of the B.Tech degree:
-  - Branch Transfer rules (Regulation 7.6).
-  - SG/CW and Summer Term strategies.
-  - Placements, Internships (6-month & summer), and absenteeism penalties.
-- **Mobile Optimized**: The timeline and resource grids have been meticulously optimized for smaller screens with reduced padding, perfectly scaled markers, and tight typography.
+### 4. **Course Analytics (`/analytics`)**
+- **Interactive Visualizations**: Breakdown of available papers, question sets, and branch distributions powered by Recharts.
 
-#### 4. **Dynamic Contributors Dashboard (`/contributors`)**
-- **Live GitHub Fetching**: Automatically fetches contributor data directly from the official repositories (`NalishJain/IIITD-PYQs` for source files and `Keshav-Chaudhary/pyq-iiitd` for website development).
-- **Interactive Podium UI**: The top 3 PYQ contributors are celebrated on a dynamic, staggered 3D-effect podium with metallic rank gradients (Gold, Silver, Bronze) and dynamic text truncation.
-- **Stats & CTA Sidebars**: Desktop users experience a fully utilized 3-column dashboard grid. The left sidebar securely fetches and displays live repository stats (Stars, Forks, Issues). The right sidebar hosts an inline "How to Contribute" guide.
-- **Floating Avatar Layout**: Website developers are showcased in a unique layout where avatars "float" out of the top of their glassmorphic cards, scaling dynamically on hover.
-- **Resilient Skeleton & Error States**: Intricately designed skeleton loaders mimic the exact geometry of the podium and sidebars. If the GitHub API rate-limits the user, the layout seamlessly degrades into a beautifully styled red-dashed error dashboard without breaking the page structure.
-
-#### 5. **Revamped Home Page (`/`)**
-- Features a glowing mesh background.
-- "Zero Friction" and "No Signup Required" transparent badging.
-- Quick chips for immediate navigation to popular branches and portals.
-- Dynamic stat panels summarizing total courses and active branches.
-
-#### 6. **Recent Refinements**
-- **Course Code Integration**: The Subject Details page now elegantly maps and displays formal IIITD course codes (e.g., `CSE102`, `MTH201`) seamlessly alongside the course name.
-- **Mobile Responsive Contributors**: The 3D podium UI, error state fallbacks, and skeleton loaders on the Contributors dashboard now flawlessly scale down and adapt perfectly to mobile screens.
-- **Polished Animations**: Perfected the CSS `@keyframes pulse` skeleton loading states across all dashboard widgets and refined the static/blinking behavior of error-state avatars.
-
-## 📸 Platform Previews
-
-### 1. Home / Landing Page
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/home-web.png" width="600" alt="Home Web" /> | <img src="docs/screenshots/home-mobile.png" width="200" alt="Home Mobile" /> |
-
-### 2. Menu Bar / Navigation
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/menu-web.png" width="600" alt="Menu Web" /> | <img src="docs/screenshots/menu-mobile.png" width="200" alt="Menu Mobile" /> |
-
-### 3. Subjects Explorer (`/subjects`)
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/subjects-web.png" width="600" alt="Subjects Web" /> | <img src="docs/screenshots/subjects-mobile.png" width="200" alt="Subjects Mobile" /> |
-
-### 4. Subject Details (`/subject/:id`)
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/subject-details-web.png" width="600" alt="Subject Details Web" /> | <img src="docs/screenshots/subject-details-mobile.png" width="200" alt="Subject Details Mobile" /> |
-
-### 5. Resources Hub & Timeline (`/resources`)
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/resources-web.png" width="600" alt="Resources Web" /> | <img src="docs/screenshots/resources-mobile.png" width="200" alt="Resources Mobile" /> |
-
-### 6. Contributors Dashboard (`/contributors`)
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/contributors-web.png" width="600" alt="Contributors Web" /> | <img src="docs/screenshots/contributors-mobile.png" width="200" alt="Contributors Mobile" /> |
-
-### 7. Analytics (`/analytics`)
-| Web View | Mobile View |
-| :---: | :---: |
-| <img src="docs/screenshots/analytics-web.png" width="600" alt="Analytics Web" /> | <img src="docs/screenshots/analytics-mobile.png" width="200" alt="Analytics Mobile" /> |
+### 5. **Automated Daily Sync & Live Timestamp**
+- **Automated Workflow**: Regularly checks and syncs new academic materials from the upstream PYQ repository.
+- **Live Sync Badge**: The website footer displays the exact last updated date and time, reflecting the latest synchronized release.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Framework**: React.js (Vite)
+- **Framework**: React 18 + Vite
 - **Routing**: React Router DOM
-- **Icons**: Lucide React
-- **Styling**: Pure, highly-optimized Vanilla CSS utilizing CSS Variables (`index.css`) for seamless theme management. No bulky UI libraries; completely bespoke design.
+- **Offline / PWA**: Vite PWA (Workbox Service Worker caching)
+- **Visuals & Charts**: Recharts, Lucide Icons, Canvas Confetti
+- **Styling**: Modern Vanilla CSS Design System with CSS Custom Properties
 
 ---
 
 ## 🏃‍♂️ Getting Started
 
-To run the platform locally:
+### Prerequisites
+- Node.js (v18.0.0 or higher)
+- npm (v9.0.0 or higher)
 
-1. **Clone the repository**
+### Setup & Local Development
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Keshav-Chaudhary/pyq-iiitd.git
+   cd pyq-iiitd
+   ```
+
 2. **Install dependencies**:
    ```bash
    npm install
    ```
-3. **Start the development server**:
+
+3. **Configure Environment Variables**:
+   Copy the example environment template:
+   ```bash
+   cp .env.example .env
+   ```
+   *(Note: The application runs with local fallback configuration out-of-the-box for development).*
+
+4. **Start the local development server**:
    ```bash
    npm run dev
    ```
-4. Open `http://localhost:5173` in your browser.
+   Open `http://localhost:5173` in your browser.
+
+---
+
+## 🔒 Security & Best Practices
+
+- **Zero Hardcoded Secrets**: All private keys, service accounts, and API tokens are managed via environment variables and GitHub Action Secrets. Never commit `.env` files to source control.
+- **Production HTTP Security Headers**: Configured with Strict-Transport-Security (HSTS), X-Content-Type-Options (`nosniff`), X-Frame-Options (`SAMEORIGIN`), and Referrer Policy.
+- **Source Code Protection**: Production sourcemaps are disabled (`sourcemap: false`) to safeguard client bundles.
+- **Vulnerability Management**: Continuous dependency audits are performed (`npm audit`) to ensure 0 high/critical package vulnerabilities.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions to both the PYQ archive and the website source code are always welcome.
+Contributions to both the PYQ archive and the platform code are warmly welcomed!
 
-- **Source File Contributions**: Head over to the [NalishJain/IIITD-PYQs](https://github.com/NalishJain/IIITD-PYQs) repository to upload past year papers, assignments, or notes.
-- **Website Contributions**: Read our **[Website Contributor Guidelines](CONTRIBUTING.md)** to set up your environment, follow branching standards, and submit pull requests to the [Keshav-Chaudhary/pyq-iiitd](https://github.com/Keshav-Chaudhary/pyq-iiitd) website repository.
-
-All contributors will be automatically featured on the `/contributors` page!
+- **Past Year Papers & Notes**: Contribute course materials to the [NalishJain/IIITD-PYQs](https://github.com/NalishJain/IIITD-PYQs) repository.
+- **Platform Development**: Check out our **[Contributing Guidelines](CONTRIBUTING.md)** for branching standards, commit format, and local verification steps.
 
 ---
 
-## 🚀 Deployment
+## 📜 License
 
-The site is configured for zero-configuration deployment to **Firebase Hosting**.
-
-To deploy updates to production (`https://pyq-iiitd.web.app`):
-1. Make sure you are logged into Firebase CLI:
-   ```bash
-   firebase login
-   ```
-2. Build and deploy using the automated script:
-   ```bash
-   npm run deploy
-   ```
-
----
-
-*Built with ❤️ for the IIITD Community.*
+This project is open-source and student-maintained under the [MIT License](LICENSE).

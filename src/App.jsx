@@ -34,6 +34,45 @@ const ExternalLinkIcon = () => (
 )
 
 function Footer() {
+  const [lastUpdated, setLastUpdated] = useState(() => {
+    return typeof __APP_LAST_UPDATED__ !== 'undefined' ? __APP_LAST_UPDATED__ : null
+  })
+
+  useEffect(() => {
+    fetch('/data/syncReport.json')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.timestamp) {
+          setLastUpdated(data.timestamp)
+        }
+      })
+      .catch(() => {})
+  }, [])
+
+  const formatUpdatedDate = (iso) => {
+    if (!iso) return null
+    try {
+      const d = new Date(iso)
+      if (isNaN(d.getTime())) return null
+      return (
+        d.toLocaleDateString(undefined, {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric',
+        }) +
+        ', ' +
+        d.toLocaleTimeString(undefined, {
+          hour: '2-digit',
+          minute: '2-digit',
+        })
+      )
+    } catch {
+      return null
+    }
+  }
+
+  const updatedText = formatUpdatedDate(lastUpdated)
+
   return (
     <footer className="footer" role="contentinfo">
       {/* Decorative gradient accent bar */}
@@ -50,7 +89,7 @@ function Footer() {
               </div>
               <div className="footer-brand-text-new">
                 <div className="footer-brand-title">
-                  IIITD PYQ's <span className="brand-author">By Kc</span>
+                  IIITD PYQ&apos;s <span className="brand-author">By Kc</span>
                   <span className="brand-version" style={{ 
                     background: 'rgba(63, 173, 168, 0.1)', 
                     color: 'var(--primary-light)', 
@@ -131,7 +170,7 @@ function Footer() {
           <div className="footer-col">
             <h4 className="footer-col-title">Contribute</h4>
             <p className="footer-col-desc">
-              Have a paper that's missing? Help fellow students by contributing to the open-source repository.
+              Have a paper that&apos;s missing? Help fellow students by contributing to the open-source repository.
             </p>
             <a href="https://github.com/NalishJain/IIITD-PYQs" target="_blank" rel="noreferrer" className="footer-contribute-btn">
               <GithubIcon size={15} /> Contribute on GitHub
@@ -145,7 +184,7 @@ function Footer() {
       <div className="footer-bottom-wrap">
         <div className="footer-bottom">
           <span className="footer-copy">
-            © {new Date().getFullYear()} IIITD PYQ's By Kc — Open source, student-maintained
+            © {new Date().getFullYear()} IIITD PYQ&apos;s By Kc — Open source, student-maintained
             <span style={{ margin: '0 8px', opacity: 0.5 }}>·</span>
             <span className="footer-version-badge" style={{ 
               background: 'rgba(63, 173, 168, 0.1)', 
@@ -157,6 +196,38 @@ function Footer() {
               fontWeight: '600',
               letterSpacing: '0.5px'
             }}>v{pkg.version}</span>
+            {updatedText && (
+              <>
+                <span style={{ margin: '0 8px', opacity: 0.5 }}>·</span>
+                <span 
+                  className="footer-updated-badge"
+                  title={`Last synchronized via GitHub Actions: ${new Date(lastUpdated).toLocaleString()}`}
+                  style={{ 
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    background: 'rgba(16, 185, 129, 0.08)', 
+                    color: '#34d399', 
+                    border: '1px solid rgba(16, 185, 129, 0.25)',
+                    padding: '2px 10px', 
+                    borderRadius: '20px', 
+                    fontSize: '0.7rem', 
+                    fontWeight: '600',
+                    letterSpacing: '0.3px'
+                  }}
+                >
+                  <span style={{
+                    width: '6px',
+                    height: '6px',
+                    borderRadius: '50%',
+                    backgroundColor: '#10b981',
+                    boxShadow: '0 0 6px #10b981',
+                    display: 'inline-block'
+                  }} aria-hidden="true" />
+                  Updated {updatedText}
+                </span>
+              </>
+            )}
           </span>
           <div className="footer-credits">
             <span className="footer-credit-item"><Link to="/legal#privacy">Privacy</Link></span>

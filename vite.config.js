@@ -1,9 +1,35 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+let lastUpdated = null
+try {
+  const syncReportPath = path.resolve(__dirname, 'src/data/syncReport.json')
+  if (fs.existsSync(syncReportPath)) {
+    const report = JSON.parse(fs.readFileSync(syncReportPath, 'utf8'))
+    if (report && report.timestamp) {
+      lastUpdated = report.timestamp
+    }
+  }
+} catch {
+  // fallback
+}
+
+if (!lastUpdated) {
+  lastUpdated = new Date().toISOString()
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    __APP_LAST_UPDATED__: JSON.stringify(lastUpdated)
+  },
   plugins: [
     react(),
     VitePWA({
